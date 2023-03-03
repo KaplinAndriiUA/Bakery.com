@@ -1,0 +1,441 @@
+*{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+
+/*****
+    HEADER
+    ********/
+
+    .header_main{
+        width: 100%;
+        position: fixed;
+        margin-top: 25px;
+        /*background-color: rgba(255,255,255,0.8);*/
+    }
+    .header_main-container{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        text-align: center;
+        max-width: 400px;
+        top:35px;
+        max-height: 50px;  
+        padding: 12.5px 20px;
+        box-sizing: border-box;
+        background-color: blanchedalmond;
+    }
+    .header_main-container > div{
+        width: 50%;
+    }
+
+    #header_main-logo { 
+        width: 150px; 
+        height: 130px;
+        top:-35px;
+        background: #A8687B;
+        color: #EDBBA2;
+        border-radius: 50%/10%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        box-shadow:0 2px 10px 1px black; 
+    }
+    #header_main-logo:before {
+        content: "";
+        position: absolute; 
+        top: 10%; 
+        bottom: 10%; 
+        right: -5%; 
+        left: -5%;
+        background: inherit;
+        border-radius: 5%/50%;
+    }
+        #header_main-logo img{
+            position: relative;
+            width: 100px;  
+            top:-4px;
+        }
+        #header_main-logo h2{
+            position: relative; 
+            font-weight: bold; 
+            font-size: 25px ;
+            top:-10px;
+        }
+        .menu-button{
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400; 
+            display: flex;
+            text-align: center;
+            font-size: 25px;
+            text-decoration: none;
+            text-transform: uppercase; 
+            color: #000;
+        }
+        .inst_logo{
+            position: relative;
+            right: 30px;
+            width: 25px;
+        }
+
+/***********
+        Main Banner
+        *****************/
+
+    .main_banner{
+        height: 40vh;
+        background-image: url("../img/main banner.jpg");
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+
+/**********
+        our fresh desserts
+        ***************************/
+
+.our_fresh_desserts-container{
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.our_fresh_desserts-container > div{
+    width: 50%;
+}
+.our_fresh_desserts-desc{
+    padding: 100px 0;
+}
+    .our_fresh_desserts-desc h2{
+        margin-bottom: 8px;
+        font-size: 25px;
+    }
+    .our_fresh_desserts-desc h3{
+        margin-bottom: 15px;
+    }
+    .our_fresh_desserts-desc hr{
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    .our_fresh_desserts-desc p{
+        margin-bottom: 15px;
+        margin-bottom: 35px;
+    }
+
+.our_fresh_desserts-img{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box; 
+    padding: 25px;
+}
+    .our_fresh_desserts-img_element{  
+        height: 48%;
+        width: 48%;
+        margin: 1%;
+    }
+    .our_fresh_desserts-img_element:nth-child(1){
+        background-image: url("../img/desserts1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .our_fresh_desserts-img_element:nth-child(2){
+        background-image: url("../img/desserts2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    .our_fresh_desserts-img_element:nth-child(3){
+        background-image: url("../img/desserts3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    .our_fresh_desserts-img_element:nth-child(4){
+        background-image: url("../img/desserts4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+
+/*************
+        donuts banner
+            *************/
+    .donuts_banner{
+        height: 60vh;
+        background-image: url("../img/donuts-banner.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+/**********
+        our signature eclairs
+            ***************************/
+            
+            
+.our_signature_eclairs-container {
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.our_signature_eclairs-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 25px;
+}
+.our_signature_eclairs-img_element {
+    height: 48%;
+    width: 100%;
+    margin: 1%;
+}
+    .our_signature_eclairs-img_element:nth-child(1) {
+        background-image: url("../img/our_signature_eclairs1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+    .our_signature_eclairs-img_element:nth-child(2) {
+        background-image: url("../img/our_signature_eclairs2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 90%;
+        
+}
+.our_signature_eclairs-desc{
+    padding: 100px 0;
+}
+    .our_signature_eclairs-desc h2{
+        margin-bottom: 8px;
+        font-size: 25px;
+    }
+    .our_signature_eclairs-desc h3{
+        margin-bottom: 15px;
+    }
+    .our_signature_eclairs-desc hr{
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    .our_signature_eclairs-desc p{
+        margin-bottom: 35px;
+    }
+
+
+/*********************
+        yours comments
+                ****************/
+    
+.yours_comments{
+    background-image: url("../img/your_com2.jpg");
+    background-position: 70%;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.yours_comments-container{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 75px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.yours_comments-container h2{
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+.yours_comments-container hr{
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+#yours_comments-form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 0;
+}
+.yours_comments-form{
+    width: 100%;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.yours_comments-button{
+    margin-top: 15px;
+}
+#form-submit{
+    background-color: white;
+    border: none;
+}
+#form-submit:hover{
+    background-color: whitesmoke;
+}
+
+/*********************
+        MENU
+    *****************/
+
+    .menu{
+        position: fixed;
+        display: none;
+        width: 100%;
+        height:100vh;
+        padding: 5vh 0;
+        background-color: rgba(250,250,250,0.8); 
+        box-sizing: border-box;
+    }
+    .menu-container{
+        max-width: 600px;
+        min-height:70vh;
+        margin: 0 auto;
+        background-color: white;
+    }
+/* Style tab links */
+.tabs{
+    display: flex; 
+}
+.tablink {    
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    flex:1;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: black;
+    display: none;
+    padding: 50px 20px 0;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 200;
+  } 
+  .tabcontent-wrapper{ 
+      width: 100%; 
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .tabcontent h3{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .tabcontent p{
+    line-height: 1; 
+    margin-bottom: 25px;
+  }
+  .menu_item{
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .mobile-menu-button{ 
+      display: none;
+  }
+
+@media screen and (max-width: 750px ) {
+
+    .header_main-container{
+        padding: 12.5px 10px;
+    }
+    /**************
+            our fresh desserts
+        **************/
+
+    .our_fresh_desserts-container{
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .our_fresh_desserts-container div{
+        width: 100%;
+    } 
+    .our_fresh_desserts-img_element{
+        height: 30vh;
+    }
+    .our_fresh_desserts-desc{
+        padding: 100px 0 0 0 ;
+    }
+
+    /*********
+            our_signature_eclairs
+        *************/
+        
+    .our_signature_eclairs-container{
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .our_signature_eclairs-container div{
+        width: 100%;
+    }
+    .our_signature_eclairs-img_element{
+        height: 30vh;
+    }
+    .our_signature_eclairs-desc{
+        padding: 0 0 100px 0;
+    }
+
+    
+    /*********************
+            yours comments
+        ****************/
+
+    .yours_comments-container{
+        padding: 15px;
+    }
+
+    
+    /*********************
+            MENU
+        ****************/
+    .menu{
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 1000vh;
+        padding: 0;
+        background-color: rgba(250,250,250,0.8); 
+        box-sizing: border-box;
+    }
+    .mobile-menu-button{
+        width: 100%;
+        display: flex;
+        font-size: 15px;
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .tabcontent{
+        padding: 20px;
+    }
+}

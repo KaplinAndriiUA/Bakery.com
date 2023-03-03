@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header_main">
+        <section class="header_main-container container">
+            <a href="#" class="menu-button"> меню</a>
+            <div id="header_main-logo">
+                <img src="assets/img/eclair.svg" alt="logo">
+                <h2>Eclair bakery</h2> 
+            </div>
+            <a href="#"><img src="assets/img/main-inst.svg" alt="" class="inst_logo"></a>
+        </section>
+    </header>
+    <main> 
+        <section class="menu menu-button">
+            <div class="menu-container">
+                <div class="tabs">
+                    <button class="tablink" onclick="openPage('eclairs_menu', this, 'silver')" id="defaultOpen">Эклеры</button>
+                    <button class="tablink" onclick="openPage('viennoiseries_menu', this, 'silver')">Франц. выпечка</button>
+                    <button class="tablink" onclick="openPage('pastries_menu', this, 'silver')">Выпечка</button>
+                    <button class="tablink" onclick="openPage('cakes_menu', this, 'silver')">Торты и печенье</button>
+                </div>
+                <div class="menu-button mobile-menu-button">Закрыть</div>
+
+                <div id="eclairs_menu" class="tabcontent">
+                    <h3>Эклеры</h3>
+                    <hr>
+                    <p>Наши эклеры бывают самых разных вкусов. Мы оставляем самые популярные из них доступными круглый год, в то время как другие меняются в зависимости от сезона. Посетите нас, чтобы узнать, какие сезонные вкусы доступны!</p>
+                    <div class="tabcontent-wrapper">
+                        <div class="menu_item">
+                            <div class="menu_item-name">Традиционный эклер</div>
+                            <div class="menu_item-price">60 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Фисташковый эклер</div>
+                            <div class="menu_item-price">60 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Эклер из темного шоколада</div>
+                            <div class="menu_item-price">60 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Эклер из молочного шоколада</div>
+                            <div class="menu_item-price">60 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Хрустящий миндальный эклер</div>
+                            <div class="menu_item-price">60 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Эклер с фундуком</div>
+                            <div class="menu_item-price">60 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Дульсе де Лече Эклер</div>
+                            <div class="menu_item-price">60 грн.5</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Чизкейк Эклер</div>
+                            <div class="menu_item-price">60 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Эклер из маракуйи</div>
+                            <div class="menu_item-price">60 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Кленовый пекан</div>
+                            <div class="menu_item-price">60 грн.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="viennoiseries_menu" class="tabcontent">
+                    <h3>Француская выпечка</h3>
+                    <hr>
+                    <div class="tabcontent-wrapper">
+                        <div class="menu_item">
+                            <div class="menu_item-name">Круассан</div>
+                            <div class="menu_item-price">55 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Миндальный круассан</div>
+                            <div class="menu_item-price">55 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Круассан с миндальным шоколадом</div>
+                            <div class="menu_item-price">55 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Круассан с миндалем и малиной</div>
+                            <div class="menu_item-price">55 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Круассан с ветчиной и сыром</div>
+                            <div class="menu_item-price">55 грн.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pastries_menu" class="tabcontent">
+                    <h3>Выпечка</h3>
+                    <hr>
+                    <div class="tabcontent-wrapper">
+                        <div class="menu_item">
+                            <div class="menu_item-name">Тирамису</div>
+                            <div class="menu_item-price">75 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Наполеон</div>
+                            <div class="menu_item-price">75 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Крем-брюле</div>
+                            <div class="menu_item-price">65 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Сливочный Флан</div>
+                            <div class="menu_item-price">75 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Чизкейк</div>
+                            <div class="menu_item-price">75 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Красный вельвет</div>
+                            <div class="menu_item-price">75 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Лимон пирог</div>
+                            <div class="menu_item-price">75 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Пирог с маракуйей</div>
+                            <div class="menu_item-price">75 грн.</div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div id="cakes_menu" class="tabcontent">
+                    <h3>Торты и печенье</h3>
+                    <hr>
+                    <div class="tabcontent-wrapper">
+                        <div class="menu_item">
+                            <div class="menu_item-name">Брауни</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Блонди</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Канеле</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Шоколадное печенье</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Кокосовое Макарун</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Тигровая нутелла</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Лимонный пирог</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Макадамия с шоколадным печеньем</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Мини пончик Nutella</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                        <div class="menu_item">
+                            <div class="menu_item-name">Мини-французский пончик с клубничным джемом</div>
+                            <div class="menu_item-price">35 грн.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="main_banner">
+
+        </section>
+
+        <section class="our_fresh_desserts">
+            <div class="our_fresh_desserts-container container">
+                <div class="our_fresh_desserts-desc">
+                    <h2>Наши пикантные десерты</h2>
+                    <h3>ГОТОЯТСЯ СВЕЖИЕ В ЗАВЕДЕНИИ КАЖДЫЙ ДЕНЬ</h3>
+                        <hr>
+                        <p>Пекарня Eclair предлагает вкусную и настоящую французскую выпечку, круассаны, макаруны, пироги и, конечно же! - фирменный товар, эклеры.</p>
+                        <p>Наша изысканная выпечка приготовлена из самых свежих, тщательно отобранных ингредиентов и ежедневно производится вручную на нашей открытой кухне!</p>
+                </div>
+                <div class="our_fresh_desserts-img">
+                        <div class="our_fresh_desserts-img_element"></div>
+                        <div class="our_fresh_desserts-img_element"></div>
+                        <div class="our_fresh_desserts-img_element"></div>
+                        <div class="our_fresh_desserts-img_element"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="donuts_banner">
+
+        </section>
+
+        <section class="our_signature_eclairs">
+            <div class="our_signature_eclairs-container container">
+                <div class="our_signature_eclairs-img">
+                        <div class="our_signature_eclairs-img_element"></div>
+                        <div class="our_signature_eclairs-img_element"></div>
+                </div>
+                <div class="our_signature_eclairs-desc">
+                    <h2>Наши фирменные эклеры</h2>
+                    <h3>ОБЯЗАТЕЛЬНО ДЛЯ ЛЮБИТЕЛЕЙ ЭКЛЕРОВ</h3>
+                        <hr>
+                        <p>Eclair Bakery - единственная пекарня в Киеве, которая предлагает эклеры с таким широким выбором вкусных начинок и топпингов.</p>
+                        <p>Наши эклеры приготовлены вручную и с любовью из заварного теста, который готовится небольшими партиями в течение дня, поэтому наши клиенты всегда могут получить самые свежие эклеры!</p>
+                        <p>Все наши творения поистине уникальны. Мы предлагаем множество различных вкусов и регулярно обновляем наш ассортимент, добавляя сезонные элементы, а также самые свежие ингредиенты.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="yours_comments">
+            <div class="yours_comments-container">
+                <h2>Мы будем рады услышать отзывы и предложения от вас</h2>
+                <hr>
+                <p>ВОПРОСЫ ИЛИ КОММЕНТАРИИ? ПОЖАЛУЙСТА, ОТПРАВЬТЕ НАМ</p>
+                <p>СООБЩЕНИЕ ИЛИ ПОЗВОНИТЕ В ПЕКАРНЮ (099) 123 4567</p>
+                <form id="yours_comments-form">
+                    <div class="yours_comments-form">
+                        <div class="yours_comments-text form-group field-text-name">
+                            <label for="text-name" class="yours_comments-text-label">Имя<span class="yours_comments-required">*</span></label>
+                            <input type="text" class="form-control" name="text-name" access="false" maxlength="15" id="text-name" required="required" aria-required="true">
+                        </div>
+                        <div class="yours_comments-text form-group field-text-1606933881531">
+                            <label for="text-1606933881531" class="yours_comments-text-label">email<span class="yours_comments-required">*</span></label>
+                            <input type="email" class="form-control" name="text-1606933881531" access="false" id="text-1606933881531" required="required" aria-required="true">
+                        </div>
+                        <div class="yours_comments-textarea form-group field-textarea-1606933911892">
+                            <label for="textarea-1606933911892" class="yours_comments-textarea-label">Ваше предложение</label>
+                            <textarea type="textarea" class="form-control" name="textarea-1606933911892" access="false" maxlength="500" rows="5" id="textarea-1606933911892"></textarea>
+                        </div>
+                        <div class="yours_comments-button form-group field-button-1606934454914">
+                            <button type="button" id="form-submit" class="btn-default btn " name="button-1606934454914" access="false" id="button-1606934454914">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+        </div>
+        </section>
+
+        
+
+    </main> 
+    
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
